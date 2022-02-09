@@ -1,0 +1,18 @@
+{
+	"ruby.useBundler": true,
+	"ruby.useLanguageServer": true,
+	"ruby.lint": {
+		"rubocop": {
+			"useBundler": true
+		},
+		"reek": {
+			"useBundler": true
+		}
+	},
+	"ruby.format": "rubocop",
+	"editor.formatOnSave": true,
+	"editor.defaultFormatter": "misogi.ruby-rubocop",
+	"editor.codeActionsOnSave": {
+		"source.fixAll": true
+	}
+}
