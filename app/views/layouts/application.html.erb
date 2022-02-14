@@ -1,16 +1,100 @@
+<%# TODO: Add social links %> <%# TODO: Add hero %> <%# TODO: Add events %> <%#
+TODO: Add club signup info %> <%# TODO: Add %>
+
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title>ClubMesaSite</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>CLUB MESA PCC</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
-    <%= javascript_importmap_tags %>
+    <%= javascript_include_tag "application", "data-turbo-track": "reload", defer: true %>
+    <!-- Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
   </head>
 
   <body>
-    <%= yield %>
+    <header>
+      <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img
+              class="bi me-2"
+              src="/assets/brand/mesaLogoSmallScreensWhiteCircle@1x.png"
+              alt="Club MESA PCC Logo: A rocket ship"
+              width="30"
+              height="30"
+              role="img"
+            />
+            Club MESA @ PCC</a
+          >
+          <button
+            class="navbar-toggler collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarCollapse"
+            aria-controls="navbarCollapse"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="navbar-collapse collapse" id="navbarCollapse">
+            <ul class="navbar-nav me-auto mb-2 mb-md-0">
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  Events
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">Event i</a>
+                  <a class="dropdown-item" href="#">Event i</a>
+                  <a class="dropdown-item" href="#">Event i</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Join Club</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Other Thing</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main><%= yield %></main>
+
+    <footer class="text-muted py-5">
+      <div class="container">
+        <p class="float-end mb-1">
+          <a href="#">Back to top</a>
+        </p>
+        <p class="mb-1">CLUB MESA PCC</p>
+        <p class="mb-0">
+          Follow us <a href="/">Instagram</a> or join our
+          <a href="/docs/5.1/getting-started/introduction/">Discord</a>.
+        </p>
+      </div>
+    </footer>
   </body>
+
+  <script
+    src="/docs/5.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"
+  ></script>
 </html>
