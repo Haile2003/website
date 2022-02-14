@@ -1,18 +1,19 @@
 {
-	"ruby.useBundler": true,
-	"ruby.useLanguageServer": true,
-	"ruby.lint": {
-		"rubocop": {
-			"useBundler": true
-		},
-		"reek": {
-			"useBundler": true
-		}
-	},
-	"ruby.format": "rubocop",
-	"editor.formatOnSave": true,
-	"editor.defaultFormatter": "misogi.ruby-rubocop",
-	"editor.codeActionsOnSave": {
-		"source.fixAll": true
-	}
+  "ruby.useBundler": true,
+  "ruby.useLanguageServer": true,
+  "ruby.lint": {
+    "rubocop": {
+      "useBundler": true
+    },
+    "reek": {
+      "useBundler": true
+    }
+  },
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll": true
+  },
+  "files.associations": {
+    "*.html.erb": "html"
+  }
 }
