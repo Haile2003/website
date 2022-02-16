@@ -5,4 +5,9 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   root 'pages#home'
+  get '/', to: 'pagess#home'
+
+  # Defines login for event updates
+  get '/login/updates', to: 'login#updates'
 end
+
